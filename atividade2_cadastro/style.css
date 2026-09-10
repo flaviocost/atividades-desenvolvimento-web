@@ -1,0 +1,92 @@
+body{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/34/BDS_West_2010-11-26.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardCadastro{
+    background-color: rgb(250, 249, 248);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 30px;
+    width: 350px; 
+}
+
+.Campos{
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+}
+.campo {
+    flex: 1;
+}
+
+.formCadastro{
+    width: 100%;
+}
+
+.formCadastro input[type='text'],
+.formCadastro input[type='email'],
+.formCadastro input[type='password'],
+.formCadastro input[type='date'],
+.formCadastro select{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.campo input,
+.campo select {
+    width: 100%;
+}
+
+.grupo-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.formCadastro label {
+    font-size: 0.85rem;
+    margin-bottom: 4px;
+}
+
+.logo-img{
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.botaoCadastrar{
+   background-color: #27ae60;
+   color: white;
+   padding: 10px;
+   width: 100%;
+   border: none;
+   border-radius: 5px;
+   margin-top: 20px;
+   cursor: pointer;
+   transition: 0.2s;
+}
+
+.botaoCadastrar:hover{
+    background-color: #6b0303;
+}
+
+
+.entrarConta {
+    margin-top: 15px; 
+    text-align: center; 
+    font-size: 0.85rem;
+}
