@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <div class="cardCadastro">
+        <img src="img/alabama-jogo.png" alt="Logo Alabama" class="logo-img">
+        <h1>Criar sua conta</h1>
+        <p>Preencha seus dados para começar</p>
+
+        <form class="formCadastro">
+            <div class="grupo-input">
+                <label for="nomeUsuario">Nome Completo</label>
+                <input type="text" id="nomeUsuario" placeholder="Seu nome completo" required>
+            </div>
+
+            <div class="grupo-input">
+                <label for="emailUsuario">E-mail</label>
+                <input type="email" id="emailUsuario" placeholder="seu email@exemplo.com" required>
+            </div>
+
+            <div class="grupo-input">
+                <label for="senhaUsuario">Senha</label>
+                <input type="password" id="senhaUsuario" placeholder="••••••••" required>
+            </div>
+
+            <div class="Campos">
+                <div class="campo">
+                    <label for="dataNascimento">Data de nascimento</label>
+                    <input type="date" id="dataNascimento" required>
+                </div>
+
+                <div class="campo">
+                    <label for="genero">Gênero</label>
+                    <select id="genero" required>
+                        <option value="" disabled selected>Selecione</option>   
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                        <option value="Outro">Outro</option>
+                        <option value="Não informar">Não informar</option>
+                    </select> 
+                </div>
+            </div>
+
+            <div class="termos">
+                <input type="checkbox" id="aceitarTermos" required>
+                <label for="aceitarTermos">
+                    Li e concordo com os <a href="#" target="_blank">Termos de Uso</a> e <a href="#" target="_blank">Política de Privacidade</a>
+                </label>
+            </div>
+
+            <button type="submit" class="botaoCadastrar">Cadastrar</button>
+
+            <p class="entrarConta">Já tem conta? <a href="">Entrar</a></p>
+        </form>
+    </div>
+</body>
+</html>
